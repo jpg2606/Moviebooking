@@ -151,8 +151,6 @@ server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-const dbURL = 'mongodb://127.0.0.1:27017/moviesdb';
-
 const db = require("./config/db.config");
 mongoose
   .connect('mongodb://127.0.0.1:27017/moviesdb', {
